@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="campton-semibold.ttf">
+            <string>Campton-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB" customClass="AvailabilityHeaderView" customModule="RoyoConsultantVendor" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="461" height="66"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OFU-FL-Z1C">
+                    <rect key="frame" x="0.0" y="0.0" width="461" height="66"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add availability" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qf3-Xz-INn">
+                            <rect key="frame" x="16" y="0.0" width="429" height="66"/>
+                            <fontDescription key="fontDescription" name="Campton-SemiBold" family="Campton" pointSize="16"/>
+                            <color key="textColor" name="txtMoreDark"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" name="backgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="qf3-Xz-INn" firstAttribute="top" secondItem="OFU-FL-Z1C" secondAttribute="top" id="WwJ-1E-ZmV"/>
+                        <constraint firstItem="qf3-Xz-INn" firstAttribute="leading" secondItem="OFU-FL-Z1C" secondAttribute="leading" constant="16" id="gFP-YO-Ddp"/>
+                        <constraint firstAttribute="bottom" secondItem="qf3-Xz-INn" secondAttribute="bottom" id="lCI-eW-ocR"/>
+                        <constraint firstAttribute="trailing" secondItem="qf3-Xz-INn" secondAttribute="trailing" constant="16" id="rwF-ct-BZ5"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <accessibility key="accessibilityConfiguration" identifier="AvailabilityHeaderView"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="OFU-FL-Z1C" secondAttribute="bottom" id="FDS-A3-Zf2"/>
+                <constraint firstItem="OFU-FL-Z1C" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="G9D-oU-eCB"/>
+                <constraint firstItem="OFU-FL-Z1C" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="v5W-dt-gxr"/>
+                <constraint firstAttribute="trailing" secondItem="OFU-FL-Z1C" secondAttribute="trailing" id="yfb-Ig-gI4"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="lblTitle" destination="qf3-Xz-INn" id="j4U-YC-pmn"/>
+            </connections>
+            <point key="canvasLocation" x="171.73913043478262" y="141.96428571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="backgroundColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="txtMoreDark">
+            <color red="0.15700000524520874" green="0.14499999582767487" blue="0.14499999582767487" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

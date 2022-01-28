@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>952614479078-ibeh87gtthl05g6481aegn7mcn9i422q.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.952614479078-ibeh87gtthl05g6481aegn7mcn9i422q</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>952614479078-3c78een3cl866c48j4be6jr4659dn4qf.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDT1r51UI5DM6YmallRtpQaLzWxUPSc8FA</string>
+	<key>GCM_SENDER_ID</key>
+	<string>952614479078</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.codebrew.RoyoConsultantVendor</string>
+	<key>PROJECT_ID</key>
+	<string>consultapp</string>
+	<key>STORAGE_BUCKET</key>
+	<string>consultapp.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:952614479078:ios:9ae9d20d542fbb74cd0727</string>
+	<key>DATABASE_URL</key>
+	<string>https://consultapp.firebaseio.com</string>
+</dict>
+</plist>

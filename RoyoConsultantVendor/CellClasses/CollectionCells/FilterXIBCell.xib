@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="campton-medium.ttf">
+            <string>Campton-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FilterXIBCell" id="gTV-IL-0wX" customClass="FilterXIBCell" customModule="HealExpert" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="160" height="36"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="160" height="36"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BBu-ND-br1">
+                        <rect key="frame" x="0.0" y="0.0" width="160" height="36"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chat" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gBh-pg-NB5">
+                                <rect key="frame" x="20" y="0.0" width="120" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="kY3-u0-bZY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Campton-Medium" family="Campton" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemPinkColor"/>
+                        <constraints>
+                            <constraint firstItem="gBh-pg-NB5" firstAttribute="top" secondItem="BBu-ND-br1" secondAttribute="top" id="ORa-a4-YcC"/>
+                            <constraint firstAttribute="trailing" secondItem="gBh-pg-NB5" secondAttribute="trailing" constant="20" id="QVk-6F-1Sh"/>
+                            <constraint firstItem="gBh-pg-NB5" firstAttribute="centerX" secondItem="BBu-ND-br1" secondAttribute="centerX" id="Qqn-96-xk4"/>
+                            <constraint firstItem="gBh-pg-NB5" firstAttribute="leading" secondItem="BBu-ND-br1" secondAttribute="leading" constant="20" id="VAM-jT-ccY"/>
+                            <constraint firstAttribute="bottom" secondItem="gBh-pg-NB5" secondAttribute="bottom" id="b7f-k9-Hs1"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="18"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="BBu-ND-br1" secondAttribute="bottom" id="GhI-cD-m3W"/>
+                <constraint firstItem="BBu-ND-br1" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="MAy-dL-vK9"/>
+                <constraint firstItem="BBu-ND-br1" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="X3g-BC-JhT"/>
+                <constraint firstAttribute="trailing" secondItem="BBu-ND-br1" secondAttribute="trailing" id="gqc-ib-Qik"/>
+            </constraints>
+            <size key="customSize" width="160" height="43"/>
+            <connections>
+                <outlet property="backView" destination="BBu-ND-br1" id="voz-wD-aLb"/>
+                <outlet property="lblText" destination="gBh-pg-NB5" id="xga-hO-Fqz"/>
+            </connections>
+            <point key="canvasLocation" x="15.942028985507248" y="88.058035714285708"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

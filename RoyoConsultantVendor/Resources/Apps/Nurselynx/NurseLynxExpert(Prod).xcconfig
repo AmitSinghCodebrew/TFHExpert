@@ -1,0 +1,45 @@
+
+#include "Pods/Target Support Files/Pods-NurseLynxExpert/Pods-NurseLynxExpert.production.xcconfig"
+
+//Google Info.plist Items //Google Login and Firebase Push //test.codebrewlab@gmail.com //p@ssw0rd@123 //ProjectName: NurseLynx
+APP_CLIENT_ID = 1032811457113-osuud4iml7p5u8ljsci5mkciu9urnhvp.apps.googleusercontent.com
+APP_REVERSED_CLIENT_ID = com.googleusercontent.apps.1032811457113-osuud4iml7p5u8ljsci5mkciu9urnhvp
+APP_PLIST_NAME = NurseLynx_GoogleService-Info
+BACKEND_SERVER_KEY = AAAA8HhcKlk:APA91bE5KDVsQISrBCYPeNusR3zF8LRtRodGCVfnlrqpJ7TjB4RZ72CYin65CUb8TFkCC2F4FUxxWuKIhP7AK07ty1UeY5H4E_FZddc9ywbLU_zqDxd25Kemlrwq2k27O5_F6C2hLQ_4
+APP_GOOGLE_PLACES_KEY = AIzaSyDdpzfu1NSSi5WalpVjkswXzvf0QaV8FeI
+
+//Facebook SDK //SigIn
+APP_FACEBBOK_APP_ID = 680508489286924 //NurseLynx //developer.codebrew@gmail.com //developer@facebook
+
+//App Store ID
+APP_APPLE_APP_ID = 1557177715
+RELATED_OTHER_APPLE_APP_ID = 1557177193
+APP_BUNDLE_ID = com.nurselynx.expert
+APP_APP_VERSION = 1.0.0
+APP_BUILD_VERSION = 6
+APP_APP_NAME = Nurselynx Pro //Change in Localizable also
+PROJECT_PLIST = Info_NurseLynx
+
+//Related Android App
+APP_ANDROID_PACKAGE_NAME = com.nurselynx.expert
+
+//DeepLinking
+APP_FIREBASE_PAGE_LINK = nurselynx.page.link
+
+//Server URLs
+APP_PROJECT_ID = c6b484d83fb21425453dcd0af6c1f01b15
+APP_BASE_PATH = https:/$()/royoconsult.com/
+APP_SOCKET_BASE_PATH = https:/$()/node.royoconsult.com
+APP_JITSI_SERVER = https:/$()/meet.royoapps.com/
+APP_IMAGE_THUMBS = https:/$()/consultants3assets.sfo2.digitaloceanspaces.com/thumbs/
+APP_IMAGE_UPLOAD = https:/$()/consultants3assets.sfo2.digitaloceanspaces.com/uploads/
+APP_IMAGE_ORIGINAL = https:/$()/consultants3assets.sfo2.digitaloceanspaces.com/original/
+APP_PDF = https:/$()/consultants3assets.sfo2.digitaloceanspaces.com/pdf/
+APP_AUDIO = https:/$()/consultants3assets.sfo2.digitaloceanspaces.com/audio/
+
+//LocalizableFile Name
+APP_LOCALIZABLE = Localizable_NurseLynx
+ENTITLEMENTS = NurseLynxExpert.entitlements
+
+//judith.walker@nurselynx.com
+//Welcome2021!

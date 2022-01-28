@@ -1,0 +1,6 @@
+framework module Pods_NurseLynxExpert {
+  umbrella header "Pods-NurseLynxExpert-umbrella.h"
+
+  export *
+  module * { export * }
+}

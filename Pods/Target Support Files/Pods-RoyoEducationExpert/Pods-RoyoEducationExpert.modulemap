@@ -1,0 +1,6 @@
+framework module Pods_RoyoEducationExpert {
+  umbrella header "Pods-RoyoEducationExpert-umbrella.h"
+
+  export *
+  module * { export * }
+}

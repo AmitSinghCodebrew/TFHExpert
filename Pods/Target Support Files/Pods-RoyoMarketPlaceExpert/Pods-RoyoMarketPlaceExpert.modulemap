@@ -1,0 +1,6 @@
+framework module Pods_RoyoMarketPlaceExpert {
+  umbrella header "Pods-RoyoMarketPlaceExpert-umbrella.h"
+
+  export *
+  module * { export * }
+}

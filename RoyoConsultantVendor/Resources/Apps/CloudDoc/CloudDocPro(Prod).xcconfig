@@ -1,0 +1,46 @@
+
+#include "Pods/Target Support Files/Pods-CloudDocPro/Pods-CloudDocPro.production.xcconfig"
+
+//Google Info.plist Items //Google Login and Firebase Push //test.codebrewlab@gmail.com //p@ssw0rd@123 //ProjectName: TaraDoc
+APP_CLIENT_ID = 544986339482-2ahq9loe9inqt81frn145mtd2gi67kfp.apps.googleusercontent.com
+APP_REVERSED_CLIENT_ID = com.googleusercontent.apps.544986339482-2ahq9loe9inqt81frn145mtd2gi67kfp
+APP_PLIST_NAME = CloudDoc_Pro_GoogleService-Info
+BACKEND_SERVER_KEY = AAAAfuO3mJo:APA91bEWlsEv80Wi5oeTMc4xg9eA9X6JKf6yZD1rTwHJvtHDZd2w4sO8bcNUev73_1mDEr7KA-6A6cIYdiBIgHf8INI39tRDimzYD399whE0dawW5bEuXpFE0T_IlcDagkhHBmEDRYZ9
+
+//Facebook SDK //SigIn
+APP_FACEBBOK_APP_ID = 879961852793008 //CloudDoc //developer.codebrew@gmail.com //developer@facebook
+
+//App Store ID
+APP_APPLE_APP_ID = 1570411592
+RELATED_OTHER_APPLE_APP_ID = 1570410048
+APP_BUNDLE_ID = com.clouddoc.expert
+APP_APP_VERSION = 1.0.0
+APP_BUILD_VERSION = 3
+APP_APP_NAME = CloudDoc Pro //Change in Localizable also
+PROJECT_PLIST = Info_CloudDocPro
+
+
+
+//Related Android App
+APP_ANDROID_PACKAGE_NAME = com.clouddoc.expert
+
+//DeepLinking
+APP_FIREBASE_PAGE_LINK = clouddoc.page.link
+
+//Server URLs
+APP_PROJECT_ID = eee7f84ccfb6ef2223ec464ab4e9309318
+APP_BASE_PATH = https:/$()/api.clouddoconline.com/
+APP_SOCKET_BASE_PATH = https:/$()/socket.clouddoconline.com
+APP_JITSI_SERVER = https:/$()/meet.clouddoconline.com/
+APP_IMAGE_THUMBS = https:/$()/clouddoc-assets.s3.af-south-1.amazonaws.com/thumbs/
+APP_IMAGE_UPLOAD = https:/$()/clouddoc-assets.s3.af-south-1.amazonaws.com/uploads/
+APP_IMAGE_ORIGINAL = https:/$()/clouddoc-assets.s3.af-south-1.amazonaws.com/original/
+APP_PDF = https:/$()/clouddoc-assets.s3.af-south-1.amazonaws.com/pdf/
+APP_AUDIO = https:/$()/clouddoc-assets.s3.af-south-1.amazonaws.com/audio/
+
+//LocalizableFile Name
+APP_LOCALIZABLE = Localizable_CloudDocPro
+ENTITLEMENTS = CloudDocPro.entitlements
+
+//Amitk@code-brew.com
+//Password : Expert@2020

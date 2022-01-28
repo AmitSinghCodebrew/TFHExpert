@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="campton-book.ttf">
+            <string>Campton-Book</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChatAccessory" customModule="AirDocExpert" customModuleProvider="target">
+            <connections>
+                <outlet property="btnAttach" destination="Pjj-gb-gpP" id="6QC-0k-Xdf"/>
+                <outlet property="btnMic" destination="Fcm-3v-i37" id="L0M-I0-nep"/>
+                <outlet property="btnSend" destination="9zz-1S-IPA" id="NhG-ZL-BCL"/>
+                <outlet property="lblSlideToCancel" destination="soQ-fa-9DE" id="4dM-gp-9jq"/>
+                <outlet property="lblTime" destination="Iv2-6Z-bmz" id="OQS-js-oJG"/>
+                <outlet property="lottieView" destination="eYa-n9-EIC" id="1M0-NR-WlE"/>
+                <outlet property="tfMessage" destination="EEb-kB-FiH" id="Adq-Yd-mfa"/>
+                <outlet property="viewAudio" destination="ptE-ok-SaL" id="kQ1-lO-z6b"/>
+                <outlet property="viewMessage" destination="FA4-7e-HZN" id="Jrf-20-ciy"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="456" height="64"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vWh-Xv-80U">
+                    <rect key="frame" x="0.0" y="0.0" width="456" height="64"/>
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="T6d-RO-2wf">
+                        <rect key="frame" x="0.0" y="0.0" width="456" height="64"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    </view>
+                    <blurEffect style="regular"/>
+                </visualEffectView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ptE-ok-SaL">
+                    <rect key="frame" x="16" y="8" width="360" height="48"/>
+                    <subviews>
+                        <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fcm-3v-i37">
+                            <rect key="frame" x="0.0" y="0.0" width="48" height="48"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="Fcm-3v-i37" secondAttribute="height" id="3h6-JG-xN7"/>
+                                <constraint firstAttribute="height" constant="48" id="aX4-cX-lHX"/>
+                            </constraints>
+                            <color key="tintColor" name="callDecline"/>
+                            <state key="normal" image="ic_mic"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="24"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iv2-6Z-bmz">
+                            <rect key="frame" x="48" y="0.0" width="30.5" height="48"/>
+                            <fontDescription key="fontDescription" name="Campton-Book" family="Campton" pointSize="12"/>
+                            <color key="textColor" name="txtMoreDark"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Slide to cancel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="soQ-fa-9DE">
+                            <rect key="frame" x="264.5" y="0.0" width="79.5" height="48"/>
+                            <fontDescription key="fontDescription" name="Campton-Book" family="Campton" pointSize="12"/>
+                            <color key="textColor" name="txtMoreDark"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" name="backgroundDullWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="Iv2-6Z-bmz" secondAttribute="bottom" id="3ml-8J-CXu"/>
+                        <constraint firstItem="Iv2-6Z-bmz" firstAttribute="leading" secondItem="Fcm-3v-i37" secondAttribute="trailing" id="Jve-ob-pOE"/>
+                        <constraint firstAttribute="height" constant="48" id="SVj-bF-pvj"/>
+                        <constraint firstItem="Fcm-3v-i37" firstAttribute="leading" secondItem="ptE-ok-SaL" secondAttribute="leading" id="TEp-PA-sFb"/>
+                        <constraint firstItem="soQ-fa-9DE" firstAttribute="top" secondItem="ptE-ok-SaL" secondAttribute="top" id="cbL-Tv-lXS"/>
+                        <constraint firstAttribute="bottom" secondItem="Fcm-3v-i37" secondAttribute="bottom" id="fti-OT-iQl"/>
+                        <constraint firstItem="Iv2-6Z-bmz" firstAttribute="top" secondItem="ptE-ok-SaL" secondAttribute="top" id="pXD-BK-4Nh"/>
+                        <constraint firstAttribute="bottom" secondItem="soQ-fa-9DE" secondAttribute="bottom" id="r72-Bw-Z5G"/>
+                        <constraint firstItem="Fcm-3v-i37" firstAttribute="top" secondItem="ptE-ok-SaL" secondAttribute="top" id="rpY-tv-nJD"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="24"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                            <size key="value" width="0.0" height="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                            <color key="value" name="shadow"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eYa-n9-EIC">
+                    <rect key="frame" x="372" y="-12" width="88" height="88"/>
+                    <color key="backgroundColor" systemColor="systemRedColor"/>
+                </view>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9zz-1S-IPA" customClass="RTLSupportedButton" customModule="AirDocExpert" customModuleProvider="target">
+                    <rect key="frame" x="392" y="8" width="48" height="48"/>
+                    <color key="backgroundColor" name="appTint"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="48" id="Hzl-S8-wcY"/>
+                        <constraint firstAttribute="height" constant="48" id="QS9-BS-YUE"/>
+                    </constraints>
+                    <color key="tintColor" name="btnWhiteTint"/>
+                    <state key="normal" image="ic_mic"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="24"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                            <size key="value" width="0.0" height="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                            <color key="value" name="shadow"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="btnAction:" destination="-1" eventType="touchUpInside" id="PYU-gL-7L4"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FA4-7e-HZN">
+                    <rect key="frame" x="16" y="8" width="360" height="48"/>
+                    <subviews>
+                        <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pjj-gb-gpP" customClass="RTLSupportedButton" customModule="AirDocExpert" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="48" height="48"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="QeD-5Z-ZAY"/>
+                                <constraint firstAttribute="width" constant="48" id="g0O-KU-BD1"/>
+                            </constraints>
+                            <color key="tintColor" name="txtExtraLight"/>
+                            <state key="normal" image="ic_attachment"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="24"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="btnAction:" destination="-1" eventType="touchUpInside" id="dvs-0Y-QYB"/>
+                            </connections>
+                        </button>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="EEb-kB-FiH" customClass="SZTextView">
+                            <rect key="frame" x="48" y="8" width="296" height="32"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="tintColor" name="appTint"/>
+                            <color key="textColor" name="txtDark"/>
+                            <fontDescription key="fontDescription" name="Campton-Book" family="Campton" pointSize="12"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Type your message..."/>
+                            </userDefinedRuntimeAttributes>
+                        </textView>
+                    </subviews>
+                    <color key="backgroundColor" name="backgroundDullWhite"/>
+                    <constraints>
+                        <constraint firstItem="EEb-kB-FiH" firstAttribute="leading" secondItem="Pjj-gb-gpP" secondAttribute="trailing" id="HGt-Uo-B3n"/>
+                        <constraint firstItem="Pjj-gb-gpP" firstAttribute="leading" secondItem="FA4-7e-HZN" secondAttribute="leading" id="N9C-n8-SQM"/>
+                        <constraint firstAttribute="height" constant="48" id="YOr-Kh-vqx"/>
+                        <constraint firstAttribute="bottom" secondItem="Pjj-gb-gpP" secondAttribute="bottom" id="iJ7-jS-dZD"/>
+                        <constraint firstItem="EEb-kB-FiH" firstAttribute="top" secondItem="FA4-7e-HZN" secondAttribute="top" constant="8" id="l1g-o0-c6D"/>
+                        <constraint firstAttribute="trailing" secondItem="EEb-kB-FiH" secondAttribute="trailing" constant="16" id="te4-LP-wfW"/>
+                        <constraint firstAttribute="bottom" secondItem="EEb-kB-FiH" secondAttribute="bottom" constant="8" id="yBr-3W-7R4"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="24"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                            <size key="value" width="0.0" height="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                            <color key="value" name="shadow"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="vWh-Xv-80U" secondAttribute="trailing" id="3Un-FB-kUW"/>
+                <constraint firstItem="FA4-7e-HZN" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="7mP-XE-Tqd"/>
+                <constraint firstItem="ptE-ok-SaL" firstAttribute="bottom" secondItem="FA4-7e-HZN" secondAttribute="bottom" id="CWs-9K-uYf"/>
+                <constraint firstAttribute="trailing" secondItem="9zz-1S-IPA" secondAttribute="trailing" constant="16" id="ELL-Qd-q3g"/>
+                <constraint firstItem="eYa-n9-EIC" firstAttribute="bottom" secondItem="9zz-1S-IPA" secondAttribute="bottom" constant="20" id="Fkb-s3-TDE"/>
+                <constraint firstItem="ptE-ok-SaL" firstAttribute="trailing" secondItem="FA4-7e-HZN" secondAttribute="trailing" id="Kvw-dH-Cv7"/>
+                <constraint firstItem="eYa-n9-EIC" firstAttribute="trailing" secondItem="9zz-1S-IPA" secondAttribute="trailing" constant="20" id="LhU-0g-9uK"/>
+                <constraint firstAttribute="bottom" secondItem="FA4-7e-HZN" secondAttribute="bottom" constant="8" id="NLy-n9-RjS"/>
+                <constraint firstItem="eYa-n9-EIC" firstAttribute="leading" secondItem="9zz-1S-IPA" secondAttribute="leading" constant="-20" id="Oht-j9-JOZ"/>
+                <constraint firstItem="vWh-Xv-80U" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="S3d-Yh-Ajb"/>
+                <constraint firstAttribute="bottom" secondItem="9zz-1S-IPA" secondAttribute="bottom" constant="8" id="So9-cb-tC0"/>
+                <constraint firstItem="ptE-ok-SaL" firstAttribute="leading" secondItem="FA4-7e-HZN" secondAttribute="leading" id="Vh2-Dw-CTt"/>
+                <constraint firstItem="9zz-1S-IPA" firstAttribute="leading" secondItem="soQ-fa-9DE" secondAttribute="trailing" constant="32" id="Z29-mB-qx0"/>
+                <constraint firstItem="FA4-7e-HZN" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="e4U-dQ-ycX"/>
+                <constraint firstAttribute="bottom" secondItem="vWh-Xv-80U" secondAttribute="bottom" id="gEI-fR-oCS"/>
+                <constraint firstItem="vWh-Xv-80U" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="jaz-rS-0Ds"/>
+                <constraint firstItem="eYa-n9-EIC" firstAttribute="top" secondItem="9zz-1S-IPA" secondAttribute="top" constant="-20" id="l9S-b1-NEo"/>
+                <constraint firstItem="9zz-1S-IPA" firstAttribute="leading" secondItem="FA4-7e-HZN" secondAttribute="trailing" constant="16" id="q0C-9g-hSW"/>
+                <constraint firstItem="ptE-ok-SaL" firstAttribute="top" secondItem="FA4-7e-HZN" secondAttribute="top" id="vO4-Zc-gVi"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="24.637681159420293" y="16.741071428571427"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_attachment" width="32" height="32"/>
+        <image name="ic_mic" width="13" height="18"/>
+        <namedColor name="appTint">
+            <color red="0.54900002479553223" green="0.80400002002716064" blue="0.2199999988079071" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="backgroundDullWhite">
+            <color red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="btnWhiteTint">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="callDecline">
+            <color red="0.92156862745098034" green="0.24705882352941178" blue="0.20392156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="shadow">
+            <color red="0.51399999856948853" green="0.53700000047683716" blue="0.59600001573562622" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="txtDark">
+            <color red="0.28200000524520874" green="0.28200000524520874" blue="0.28200000524520874" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="txtExtraLight">
+            <color red="0.70200002193450928" green="0.71799999475479126" blue="0.74900001287460327" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="txtMoreDark">
+            <color red="0.15700000524520874" green="0.14499999582767487" blue="0.14499999582767487" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

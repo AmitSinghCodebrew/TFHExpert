@@ -1,0 +1,6 @@
+framework module Pods_HealthCareExpert {
+  umbrella header "Pods-HealthCareExpert-umbrella.h"
+
+  export *
+  module * { export * }
+}

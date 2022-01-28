@@ -1,0 +1,6 @@
+framework module Pods_CloudDocPro {
+  umbrella header "Pods-CloudDocPro-umbrella.h"
+
+  export *
+  module * { export * }
+}

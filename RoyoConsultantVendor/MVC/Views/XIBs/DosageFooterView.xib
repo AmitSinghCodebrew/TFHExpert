@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="campton-medium.ttf">
+            <string>Campton-Medium</string>
+        </array>
+        <array key="campton-semibold.ttf">
+            <string>Campton-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB" customClass="DosageFooterView" customModule="HealthCare_Expert" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="448" height="119"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HFD-G4-R5s">
+                    <rect key="frame" x="16" y="35.5" width="200" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="T0U-df-N5G"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Campton-SemiBold" family="Campton" pointSize="14"/>
+                    <state key="normal" title="Add">
+                        <color key="titleColor" name="txtTheme"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" name="txtTheme"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="24"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="btnAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="uYr-lh-40B"/>
+                    </connections>
+                </button>
+                <button opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1jg-z2-Q15">
+                    <rect key="frame" x="232" y="35.5" width="200" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="3Yp-oy-exU"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Campton-Medium" family="Campton" pointSize="14"/>
+                    <state key="normal" title="Reset">
+                        <color key="titleColor" name="requestStatusFailed"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" name="requestStatusFailed"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="24"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="btnAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="Kyc-CF-7aH"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="1jg-z2-Q15" firstAttribute="bottom" secondItem="HFD-G4-R5s" secondAttribute="bottom" id="AtN-R1-C2Z"/>
+                <constraint firstAttribute="trailing" secondItem="1jg-z2-Q15" secondAttribute="trailing" constant="16" id="JCo-iC-8a4"/>
+                <constraint firstItem="1jg-z2-Q15" firstAttribute="width" secondItem="HFD-G4-R5s" secondAttribute="width" id="Kuc-I7-txe"/>
+                <constraint firstItem="HFD-G4-R5s" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="MAq-w4-aXI"/>
+                <constraint firstItem="1jg-z2-Q15" firstAttribute="top" secondItem="HFD-G4-R5s" secondAttribute="top" id="Nc8-9Q-ssi"/>
+                <constraint firstItem="1jg-z2-Q15" firstAttribute="leading" secondItem="HFD-G4-R5s" secondAttribute="trailing" constant="16" id="nGp-Zi-xCo"/>
+                <constraint firstItem="HFD-G4-R5s" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="rGG-SR-D97"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="btnAdd" destination="HFD-G4-R5s" id="PEO-n8-O6U"/>
+                <outlet property="btnReset" destination="1jg-z2-Q15" id="SV0-ep-Hh3"/>
+            </connections>
+            <point key="canvasLocation" x="162.31884057971016" y="262.16517857142856"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="requestStatusFailed">
+            <color red="1" green="0.32549019607843138" blue="0.32549019607843138" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="txtTheme">
+            <color red="0.24699999392032623" green="0.5690000057220459" blue="0.96899998188018799" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

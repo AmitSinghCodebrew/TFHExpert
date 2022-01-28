@@ -1,0 +1,46 @@
+
+#include "Pods/Target Support Files/Pods-HomeDoctorKhalidExperts/Pods-HomeDoctorKhalidExperts.production.xcconfig"
+
+//Google Info.plist Items //Google Login and Firebase Push //test.codebrewlab@gmail.com //p@ssw0rd@123 //ProjectName: Home Doctor
+APP_CLIENT_ID = 226777979953-t5to9lit76l30vemgf2tfpuqf1p48vh4.apps.googleusercontent.com
+APP_REVERSED_CLIENT_ID = com.googleusercontent.apps.226777979953-t5to9lit76l30vemgf2tfpuqf1p48vh4
+APP_PLIST_NAME = HomeDoctorExperts_GoogleService-Info
+BACKEND_SERVER_KEY = AAAANM0FXDE:APA91bHzRNwliVNXjAoyfqssBn3SaU-wxnntyCaNi9kTtfnc7FuIaBZfPw6UNVhK7TK9Mm-p2j_1B4n4f0hG5FzcdKr2c86Gjs8oqOlqnevbfd-45BOR0eCzrwubmq0CoKTU1haB6QvS
+APP_GOOGLE_PLACES_KEY = AIzaSyDCVqemLb263wtS1eU2qiueV5AP9ME0F_A
+
+//Facebook SDK //SigIn
+APP_FACEBBOK_APP_ID = 1304056943287310 //Home Docotor //developer.codebrew@gmail.com //developer@facebook
+
+//App Store ID
+APP_APPLE_APP_ID = 1546698181
+RELATED_OTHER_APPLE_APP_ID = 000000000
+APP_BUNDLE_ID = com.homeDoctorKhalid.Expert
+APP_APP_VERSION = 1.2
+APP_BUILD_VERSION = 2
+APP_APP_NAME = Inhomed for Expert //Change in Localizable also
+PROJECT_PLIST = Info_HomeDoctor_Khalid
+
+
+//Related Android App
+APP_ANDROID_PACKAGE_NAME = com.homeDoctor.expert
+
+//DeepLinking
+APP_FIREBASE_PAGE_LINK = inhomed.page.link
+
+//Server URLs
+APP_PROJECT_ID = cee2fff85b65c53502034e689c65001611
+APP_BASE_PATH = https:/$()/calladmin.inhomed.com/
+APP_SOCKET_BASE_PATH = https:/$()/call.inhomed.com
+APP_JITSI_SERVER = https:/$()/meet.inhomed.com/
+APP_IMAGE_THUMBS = https:/$()/inhomed-assets.s3.me-south-1.amazonaws.com/thumbs/
+APP_IMAGE_UPLOAD = https:/$()/inhomed-assets.s3.me-south-1.amazonaws.com/uploads/
+APP_IMAGE_ORIGINAL = https:/$()/inhomed-assets.s3.me-south-1.amazonaws.com/original/
+APP_PDF = https:/$()/inhomed-assets.s3.me-south-1.amazonaws.com/pdf/
+APP_AUDIO = https:/$()/inhomed-assets.s3.me-south-1.amazonaws.com/audio/
+
+//LocalizableFile Name
+APP_LOCALIZABLE = Localizable_Khalid
+ENTITLEMENTS = HomeDoctorKhalidExpert.entitlements
+
+//Info@inhomed.com
+//Khaled2@

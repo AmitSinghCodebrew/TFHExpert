@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="campton-book.ttf">
+            <string>Campton-Book</string>
+        </array>
+        <array key="campton-medium.ttf">
+            <string>Campton-Medium</string>
+        </array>
+        <array key="campton-semibold.ttf">
+            <string>Campton-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HomeHeaderView" customModule="AirDocExpert" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="428" height="129"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AhY-vJ-2vL">
+                    <rect key="frame" x="0.0" y="0.0" width="428" height="129"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="HLC-az-xzZ">
+                            <rect key="frame" x="16" y="8" width="396" height="65"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Appointment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cTg-d8-bC9">
+                                    <rect key="frame" x="0.0" y="0.0" width="396" height="32.5"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="32.5" id="m8j-ux-fvJ"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Campton-Book" family="Campton" pointSize="24"/>
+                                    <color key="textColor" name="txtMoreDark"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nld-UF-mgf">
+                                    <rect key="frame" x="0.0" y="32.5" width="396" height="32.5"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Requests" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n9W-kV-ZgO">
+                                            <rect key="frame" x="0.0" y="0.0" width="101.5" height="32.5"/>
+                                            <fontDescription key="fontDescription" name="Campton-SemiBold" family="Campton" pointSize="24"/>
+                                            <color key="textColor" name="txtMoreDark"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qVy-Tj-nip">
+                                            <rect key="frame" x="109.5" y="4.5" width="24" height="24"/>
+                                            <color key="backgroundColor" name="appTint"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="24" id="82c-GN-J1p"/>
+                                                <constraint firstAttribute="height" constant="24" id="mbX-JD-kOp"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Campton-Book" family="Campton" pointSize="24"/>
+                                            <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="1"/>
+                                            <state key="normal" title="+">
+                                                <color key="titleColor" name="txtWhite"/>
+                                            </state>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="12"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="btnAddAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="lCv-dO-V1u"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="n9W-kV-ZgO" firstAttribute="leading" secondItem="nld-UF-mgf" secondAttribute="leading" id="5Da-op-h8n"/>
+                                        <constraint firstItem="qVy-Tj-nip" firstAttribute="leading" secondItem="n9W-kV-ZgO" secondAttribute="trailing" constant="8" id="MYo-lq-0br"/>
+                                        <constraint firstAttribute="bottom" secondItem="n9W-kV-ZgO" secondAttribute="bottom" id="XhN-Ln-0te"/>
+                                        <constraint firstItem="n9W-kV-ZgO" firstAttribute="top" secondItem="nld-UF-mgf" secondAttribute="top" id="nCc-UD-wa8"/>
+                                        <constraint firstItem="qVy-Tj-nip" firstAttribute="centerY" secondItem="nld-UF-mgf" secondAttribute="centerY" id="wNl-HB-Q2E"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                        </stackView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bbk-cF-ywY">
+                            <rect key="frame" x="364" y="26" width="48" height="29"/>
+                            <fontDescription key="fontDescription" name="Campton-Medium" family="Campton" pointSize="14"/>
+                            <state key="normal" title="View all">
+                                <color key="titleColor" name="txtTheme"/>
+                            </state>
+                            <connections>
+                                <action selector="btnAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="scL-Bi-sWV"/>
+                            </connections>
+                        </button>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="ffV-4l-8V9">
+                            <rect key="frame" x="0.0" y="85" width="428" height="36"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="36" id="PzP-jp-3wN"/>
+                            </constraints>
+                            <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="16" minimumInteritemSpacing="0.0" id="QWu-H1-jxz">
+                                <size key="itemSize" width="88" height="25"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                            <cells/>
+                        </collectionView>
+                    </subviews>
+                    <color key="backgroundColor" name="backgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="Bbk-cF-ywY" firstAttribute="trailing" secondItem="HLC-az-xzZ" secondAttribute="trailing" id="0Fd-vw-fBh"/>
+                        <constraint firstItem="ffV-4l-8V9" firstAttribute="leading" secondItem="AhY-vJ-2vL" secondAttribute="leading" id="D8b-tm-UKL"/>
+                        <constraint firstAttribute="trailing" secondItem="ffV-4l-8V9" secondAttribute="trailing" id="Ed5-BD-0SA"/>
+                        <constraint firstItem="HLC-az-xzZ" firstAttribute="leading" secondItem="AhY-vJ-2vL" secondAttribute="leading" constant="16" id="Pdp-FM-aQx"/>
+                        <constraint firstAttribute="trailing" secondItem="HLC-az-xzZ" secondAttribute="trailing" constant="16" id="UWQ-L2-8vH"/>
+                        <constraint firstItem="Bbk-cF-ywY" firstAttribute="centerY" secondItem="HLC-az-xzZ" secondAttribute="centerY" id="cvc-GB-aRo"/>
+                        <constraint firstItem="HLC-az-xzZ" firstAttribute="top" secondItem="AhY-vJ-2vL" secondAttribute="top" constant="8" id="rXw-3h-XZ8"/>
+                        <constraint firstAttribute="bottom" secondItem="ffV-4l-8V9" secondAttribute="bottom" constant="8" id="v71-j6-u5P"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <accessibility key="accessibilityConfiguration" identifier="HomeHeaderView"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="AhY-vJ-2vL" secondAttribute="bottom" id="ZCg-cy-a92"/>
+                <constraint firstItem="AhY-vJ-2vL" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="bqD-zu-e9c"/>
+                <constraint firstItem="AhY-vJ-2vL" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="mpN-tI-otS"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="AhY-vJ-2vL" secondAttribute="trailing" id="rvB-KN-ZDl"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="btn" destination="Bbk-cF-ywY" id="65R-s6-Xbb"/>
+                <outlet property="btnAdd" destination="qVy-Tj-nip" id="O5w-r9-z2v"/>
+                <outlet property="collectionFilters" destination="ffV-4l-8V9" id="Zja-HD-BxB"/>
+                <outlet property="lblTItleRegular" destination="cTg-d8-bC9" id="Prx-HS-yZv"/>
+                <outlet property="lblTitleBold" destination="n9W-kV-ZgO" id="1YT-75-Ikd"/>
+            </connections>
+            <point key="canvasLocation" x="147.82608695652175" y="74.665178571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="appTint">
+            <color red="0.63899999856948853" green="0.70599997043609619" blue="0.88999998569488525" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="backgroundColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="txtMoreDark">
+            <color red="0.15700000524520874" green="0.14499999582767487" blue="0.14499999582767487" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="txtTheme">
+            <color red="0.15299999713897705" green="0.16500000655651093" blue="0.5220000147819519" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="txtWhite">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

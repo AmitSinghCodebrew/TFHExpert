@@ -1,0 +1,52 @@
+
+#include "Pods/Target Support Files/Pods-HealthCareExpert/Pods-HealthCareExpert.production.xcconfig"
+
+//Google Info.plist Items //Google Login and Firebase Push //test.codebrewlab@gmail.com //p@ssw0rd@123 //ProjectName: MyDoctor
+APP_CLIENT_ID = 960044561911-ci7lbkfq0pb4c9j88fj1b0lhb8t4d2rd.apps.googleusercontent.com
+APP_REVERSED_CLIENT_ID = com.googleusercontent.apps.960044561911-ci7lbkfq0pb4c9j88fj1b0lhb8t4d2rd
+APP_PLIST_NAME = HealthCare_Prashant_GoogleService-Info
+BACKEND_SERVER_KEY = AAAA34cddfc:APA91bEEa_k2wElR68Nn7DDMB32o1P-1d-qvMA_S_WKDj9qL49YDn70enxibcNvOzJcD15OokDFcZJSE1ew_AuMUZSL40BS8UQd9Uh6Ztk4NrsY4upR3FpvxvqWNigI5goKyspjHZIbL
+
+//Facebook SDK //SigIn
+APP_FACEBBOK_APP_ID = 1103838806679919 //MyDoctor //developer.codebrew@gmail.com //developer@facebook
+
+//App Store ID
+APP_APPLE_APP_ID = 1541455530
+RELATED_OTHER_APPLE_APP_ID = 1541455523
+APP_BUNDLE_ID = com.healthcareExpert.prashant
+APP_APP_VERSION = 1.0.2
+APP_BUILD_VERSION = 1.7
+APP_APP_NAME = TFH Care Pro //Change in Localizable also
+PROJECT_PLIST = Info_HealthCare_Prashant
+
+
+//Related Android App
+APP_ANDROID_PACKAGE_NAME = com.mydoctor.expert
+
+//DeepLinking
+APP_FIREBASE_PAGE_LINK = healthcaremydoctor.page.link
+
+//Server URLs
+APP_PROJECT_ID = c8ce267181881c2d0e7251cda66172b07
+APP_BASE_PATH = https:/$()/thefinesthealthcare.com/
+
+//APP_SOCKET_BASE_PATH = https:/$()/node.thefinesthealthcare.com
+ APP_SOCKET_BASE_PATH = https:/$()/socket.thefinesthealthcare.com
+
+//APP_JITSI_SERVER = https:/$()/meet.royoapps.com/
+ APP_JITSI_SERVER =  https:/$()/meet.thefinesthealthcare.com/
+
+APP_IMAGE_THUMBS = https:/$()/cdn-assets.thefinesthealthcare.com/thumbs/
+APP_IMAGE_UPLOAD = https:/$()/cdn-assets.thefinesthealthcare.com/uploads/
+APP_IMAGE_ORIGINAL = https:/$()/cdn-assets.thefinesthealthcare.com/original/
+APP_PDF = https:/$()/cdn-assets.thefinesthealthcare.com/pdf/
+APP_AUDIO = https:/$()/cdn-assets.thefinesthealthcare.com/audio/
+
+//LocalizableFile Name
+APP_LOCALIZABLE = Localizable_Prashant
+ENTITLEMENTS = HealthCareExpert.entitlements
+
+//
+//ID : pbudania18@gmail.com
+//pass: Goom@123
+//95488b9110b273783ed609f73a1c9006013fa077

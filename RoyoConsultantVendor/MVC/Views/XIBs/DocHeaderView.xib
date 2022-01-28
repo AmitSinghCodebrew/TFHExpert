@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="campton-semibold.ttf">
+            <string>Campton-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DocHeaderView" customModule="RoyoConsultantVendor" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="466" height="67"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bbb-5j-rbO">
+                    <rect key="frame" x="0.0" y="0.0" width="466" height="67"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t74-5M-HqV">
+                            <rect key="frame" x="20" y="24" width="39.5" height="19"/>
+                            <fontDescription key="fontDescription" name="Campton-SemiBold" family="Campton" pointSize="16"/>
+                            <color key="textColor" name="txtMoreDark"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LMU-a9-1vC">
+                            <rect key="frame" x="416" y="0.0" width="30" height="67"/>
+                            <fontDescription key="fontDescription" name="Campton-SemiBold" family="Campton" pointSize="14"/>
+                            <state key="normal" title="Add">
+                                <color key="titleColor" name="txtTheme"/>
+                            </state>
+                            <connections>
+                                <action selector="btnAddAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="mNh-7f-fok"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" name="backgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="LMU-a9-1vC" firstAttribute="top" secondItem="Bbb-5j-rbO" secondAttribute="top" id="GnH-ng-w39"/>
+                        <constraint firstAttribute="bottom" secondItem="LMU-a9-1vC" secondAttribute="bottom" id="aou-4N-TQg"/>
+                        <constraint firstItem="LMU-a9-1vC" firstAttribute="centerY" secondItem="Bbb-5j-rbO" secondAttribute="centerY" id="g7F-Dt-vip"/>
+                        <constraint firstItem="t74-5M-HqV" firstAttribute="centerY" secondItem="Bbb-5j-rbO" secondAttribute="centerY" id="nQk-wh-CPW"/>
+                        <constraint firstItem="t74-5M-HqV" firstAttribute="leading" secondItem="Bbb-5j-rbO" secondAttribute="leading" constant="20" id="su8-1K-5QD"/>
+                        <constraint firstAttribute="trailing" secondItem="LMU-a9-1vC" secondAttribute="trailing" constant="20" id="tWc-I7-1DV"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <accessibility key="accessibilityConfiguration" identifier="DocHeaderView"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Bbb-5j-rbO" secondAttribute="bottom" id="aH5-IN-xyE"/>
+                <constraint firstItem="Bbb-5j-rbO" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="c8m-Yd-hqi"/>
+                <constraint firstItem="Bbb-5j-rbO" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="efo-6o-YGP"/>
+                <constraint firstItem="Bbb-5j-rbO" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="nf2-x3-MA4"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="btnAdd" destination="LMU-a9-1vC" id="5g5-hj-36B"/>
+                <outlet property="lblTitle" destination="t74-5M-HqV" id="QNd-6T-Jaz"/>
+            </connections>
+            <point key="canvasLocation" x="175.36231884057972" y="139.62053571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="backgroundColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="txtMoreDark">
+            <color red="0.15700000524520874" green="0.14499999582767487" blue="0.14499999582767487" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="txtTheme">
+            <color red="0.24699999392032623" green="0.5690000057220459" blue="0.96899998188018799" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
